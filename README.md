@@ -1,5 +1,5 @@
-# k-petite.p2
-10.03.17
+# CSS to SASS
+03.06.17
 
 Site was tested and showed smooth look on:
 
