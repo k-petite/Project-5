@@ -336,7 +336,7 @@ footer p {
   .footer-nav {
     padding: 0px;
     display: flex;
-    justify-content: spase-between; }
+    justify-content: space-between; }
     .footer-nav a {
       padding: 10px; }
   .footer-name {
@@ -358,7 +358,7 @@ h1,
 .footer-name {
   margin: 0; }
 
-/* ================================= 
+/* =================================
                 Clearfix
 ==================================== */
 .cf:before,
