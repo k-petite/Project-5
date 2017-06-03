@@ -1,0 +1,133 @@
+footer {
+	p {
+		font-weight:400;
+		opacity:.6;
+	}
+}
+
+.footer-nav li:nth-of-type(1),
+.footer-nav li:nth-of-type(2),
+.footer-nav li:nth-of-type(3),
+.footer-nav li:nth-of-type(4){
+  display:none;
+}  /* Hides extra nav links in mobile view */
+
+
+.main-footer{
+	display:flex;
+	justify-content: space-between;
+	align-items:baseline;
+	border-top:  1px solid $grey;
+}
+
+
+.footer {
+	@extend %auto-centered;
+	@include elem(50px auto 10px, 50px 0 0 0);
+	@media #{$brk-narrow}{
+			
+			p {
+				@include elem(0 auto, $width: 70%, $size: 1.2em);
+			}
+			
+			&-nav li:nth-of-type(5){
+				display:none;
+			}
+		
+			&-nav li,
+			&-name {
+				@include text (1em , 700);
+				opacity:0.8;
+				background:none;
+			}
+		
+			&-nav li:nth-of-type(1),
+			&-nav li:nth-of-type(2),
+			&-nav li:nth-of-type(3),
+			&-nav li:nth-of-type(4){
+				display:initial;
+				padding: 10px;
+			} /* Shows extra nav links in mobile view */
+		}	//end .footer media query
+		
+/* --- Footer contact section --- */
+	
+	h2 {
+		padding-bottom:20px;
+	}
+
+
+	p:nth-of-type(1) {
+  	margin-bottom:10px;
+	}
+
+	p:nth-of-type(2),
+	p:nth-of-type(3){
+		margin-top:20px;
+	}
+
+	p:nth-of-type(3){
+  	margin-bottom:70px;
+	}
+
+/* --- Footer navigation --- */
+
+
+
+  &-nav {
+//		@extend %auto-centered;
+	padding: 0px;
+	display:flex;
+	justify-content:spase-between;
+	a {
+			padding: 10px;
+			}
+  }
+
+   &-name {
+		font-size:1em;
+		padding: 20px;
+  }
+
+  
+	&-nav a, 
+   h2  {
+		@include text (1em , 700);
+    text-transform: uppercase;
+  	}
+	
+  &-name,
+  &-nav ul li a {
+					@media #{$brk-wide}{
+						font-size: 1.15em;
+					}
+  }
+
+
+	p {
+					@media #{$brk-wide}{
+						font-size: 1.25em;
+					}
+  	}
+}
+
+
+
+h1, 
+.footer-name{
+margin:0;
+}
+
+/* ================================= 
+                Clearfix
+==================================== */
+
+  .cf:before,
+  .cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+   }
+
+  .cf:after {
+    clear: both;
+  }

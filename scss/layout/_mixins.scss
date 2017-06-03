@@ -1,0 +1,17 @@
+//Margin-padding
+
+@mixin elem( $margin, $padding:  null, $width:  null, $size:  null, $weight: null ) {
+	margin     : $margin;
+	padding    : $padding;
+	width      : $width;
+	font-size  : $size;
+	font-weight: $weight;		
+}
+				
+//Fonts
+				
+@mixin text ($size , $weight , $color:null) {
+	font-size   :  $size;
+	font-weight :  $weight;
+	color       :  $color;
+	}

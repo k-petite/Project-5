@@ -1,0 +1,150 @@
+.main-title {
+  margin: 0 auto 40px;
+	padding-top: 20px;
+}
+
+
+/* --- General info --- */
+
+
+.profile-image {
+	@include elem(10px auto 10px, $width:70%);
+}
+
+
+.profile{
+  padding-bottom:30px;
+					@media #{$brk-wide} {
+						p {
+							font-size: 1.5em;
+						}
+					}
+}
+
+.profile a {
+  font-weight:600;
+}
+
+
+/* Portfolio section */
+
+.main-wrapper ul p {
+	@include elem(auto, $width: 95%, $size: 1em, $weight: 400);
+  padding-bottom:20px;
+}
+
+.main-wrapper {
+					@media #{$brk-wide} {
+						background-color: $green-blue;
+						margin: 0 2em;
+						.container {
+							width:90%;
+						}
+					}
+}
+
+
+
+#pics{
+  padding-left: 0;
+  padding-right: 0;
+					@media #{$brk-narrow}{
+						@include elem( 0,0 );
+						list-style:none;
+						
+						li {
+							@include elem(1%, $width:  48%);
+							text-align: center;
+							float:left;
+							margin-bottom:1.5em;
+							}
+						
+					
+						li p {
+							@include elem( 0 auto, 5%, $size:  1em )
+							}
+					
+					
+						li:nth-child(3) {
+							clear: left;
+							}
+						
+				
+						li:nth-child(5) {
+							clear: left;
+							}
+						}  
+						
+						@media #{$brk-wide}{
+				
+						li {
+						@include elem( 1%, $width:  31.33% )
+						}
+					
+						li:nth-child(3) {
+								clear: none;
+						}
+						
+						li:nth-child(5) {
+							clear: none;
+						}
+					
+						li:nth-child(4) {
+							clear: left;
+						}
+					}
+	}
+
+/* --- Responsive design section --- */
+
+.responsive p {
+	@include elem( 12px auto, $width:  80% );
+  line-height: 2em;
+  font-family: 'Comfortaa', sans-serif;
+  color: $purple;
+  border-top: 1px solid $brick;
+  border-bottom: 1px solid $brick;
+					
+						@media #{$brk-wide}{
+							font-size: 1.5em;
+  					}
+  }
+
+.responsive-image{
+	@include elem( 10px auto 10px, $width: 80% )
+}
+
+.responsive{
+  padding-bottom:30px;
+	
+	@media #{$brk-narrow}{
+		
+		.col{
+			float:left;
+		}
+	
+	
+		.secondary{
+			width:55%;
+		}
+	
+		.primary{
+			width:45%;
+			padding-left:1em;
+		}
+	
+		p {
+			margin: 5% 0 2% -4px;
+			padding-left: 1em;
+		}
+	
+		.primary {
+			vertical-align:middle;
+		}
+	
+	  &:nth-child(1){
+      font-size: 1.2em;
+      text-align:left;
+ 		}
+	}
+}

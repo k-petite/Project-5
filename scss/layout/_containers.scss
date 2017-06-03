@@ -1,0 +1,62 @@
+.container {
+  @extend %auto-centered;
+	width:90%;
+	
+	@media #{$brk-wide} {
+	width:85%;
+	margin:0 auto;
+	}
+}
+
+.main-wrapper .container{
+  padding-top: 2em;
+ }
+
+.main-header {
+  padding:1em 0;
+	
+	@media #{$brk-narrow} {
+    padding-top:1em;
+	}
+}
+
+.profile { 
+	.col {
+		@media #{$brk-narrow}{
+	    float:right;
+    	padding-right:1px;
+    	padding-left:1px;
+		}
+  }
+
+	.primary{
+		@media #{$brk-narrow}{
+    width:55%;
+    font-size: 1.5em;
+    text-align:left;
+    padding-right:1em;
+		}
+  }
+
+	.secondary{
+		@media #{$brk-narrow}{
+    width:45%;
+    margin-left:-4px;
+		}
+  }
+}
+
+
+.foot-wrapper {
+  padding-bottom:5px;
+}
+
+footer .container{
+	@media #{$brk-narrow}{
+	padding-left: 3em;
+	padding-right:3em;
+	letter-spacing:inherit;
+	}
+}
+
+

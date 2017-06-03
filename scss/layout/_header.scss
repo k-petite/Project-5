@@ -1,0 +1,91 @@
+.name {
+	@include text (1.8em , 700);
+  margin: 0 0 20px;
+	
+	
+				@media #{$brk-narrow} {
+					width:10em;
+					margin-bottom:0;
+					margin-top:1em;
+					padding: 0;
+					display:inline-block;
+				}
+			}
+
+.main-nav li {
+	@extend %centered;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.name a,
+.main-nav a {
+	@extend %centered;
+	padding: 12px 12px;
+	display: block;
+}
+
+.main-nav a {
+	@include text (1em , 700);
+  text-transform: uppercase;
+	
+					@media #{$brk-narrow} {
+					display: block;
+					padding: 1em;
+					}
+}
+
+.main-nav ul li {
+  @extend %centered;
+	padding:0;
+					@media #{$brk-narrow} {
+						display:inline-block;
+						background: none;
+					}  
+}
+
+.main-nav ul {
+  padding:0;
+}
+
+   .name,
+   .nav,
+   .nav li {
+						@media #{$brk-wide} {
+							display:inline-block;
+						}
+   }  
+
+   .main-nav {
+						@media #{$brk-wide} {
+							margin-top:1.5em;
+						}
+		} 
+    
+
+.main-header {
+					@media #{$brk-wide} {	
+						.name {
+							@include elem(0, 1rem, 30%, 1.7em);
+							float:left;
+							text-align:left;
+						}
+					
+						.nav {
+							float:right;
+							margin-top:0;
+							margin-bottom:0;
+						}
+						
+						.nav li {
+							padding-right: 0;
+							margin-right:0;
+						}
+					
+						.nav li a {
+							padding: 1rem;
+							font-size:1.2em;
+							display:block;
+						 }
+					}
+}

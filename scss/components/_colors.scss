@@ -1,0 +1,34 @@
+
+body {
+  color: $dark-grey;
+  background:$light-grey;
+}
+
+a {
+  color: $dark-grey;
+}
+
+header .main-nav li {
+	background: $white;
+}
+
+header .main-nav a:hover {
+		color: $light-blue;
+	}
+
+.main-wrapper {
+  background: $white;
+}
+
+.profile a {
+  color: $light-blue;
+}
+
+.profile a:hover {
+  color: $dark-blue;
+}
+
+
+.footer-nav a:hover {
+		color: $light-blue;
+	}
